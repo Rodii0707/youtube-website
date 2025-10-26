@@ -1,0 +1,66 @@
+.video-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:8px;
+  row-gap:22px;
+  padding:20px;
+}
+@media (max-width:869px){
+  .video-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+@media (min-width:870px) and (max-width:1124px){
+  .video-grid{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+}
+@media (min-width:1123px){
+  .video-grid{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-card {
+  padding:4px;
+}
+.video-pic {
+  width:100%;
+}
+.pic-contaner {
+  position:relative;
+}
+.video-time {
+  position:absolute;
+  background-color:black;
+  color:white;
+  padding:4px;
+  font-size:12px;
+  right:4px;
+  bottom:11px;
+  border-radius:2px;
+}
+.info-video-contaner {
+  display:grid;
+  grid-template-columns: 50px 1fr;
+}
+.channel-pic {
+  width:36px;
+  margin-top:8px;
+  border-radius:36px;
+}
+.video-info {
+  margin-top:8px;
+}
+.title {
+  font-size:14px;
+  font-weight: bold;
+  line-height: 20px; 
+  margin-bottom:10px;
+}
+.channel-name,
+.video-state {
+  font-size:12px;
+  margin-bottom:5px;
+  color:rgb(68, 68, 68);
+}
